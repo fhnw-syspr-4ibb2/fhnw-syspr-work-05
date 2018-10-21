@@ -19,7 +19,7 @@ I'm child pid of parent pid_p</pre>
 * Hinweis: Dokumentation von *sigprocmask()* lesen, *sigpending()* und *printf("%032x", ...)* nutzen.
 
 ### c) exit(), 15'
-* Sehen Sie sich [fork_stdio_buf.c](http://man7.org/tlpi/code/online/book/procexec/fork_stdio_buf.c)<sup>TLPI</sup> an und erklären Sie, wieso sich der Output dieser beiden Aufrufe unterscheidet:<pre>
+* Finden Sie heraus, wieso sich in [fork_stdio_buf.c](http://man7.org/tlpi/code/online/book/procexec/fork_stdio_buf.c)<sup>TLPI</sup> der Output dieser beiden Aufrufe unterscheidet:<pre>
 $ ./fork_stdio_buf
 $ ./fork_stdio_buf > file && cat file</pre>
 * Wieso wird ein Teil des Outputs doppelt ausgegeben?
