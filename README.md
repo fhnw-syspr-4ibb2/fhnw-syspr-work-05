@@ -26,7 +26,7 @@ $ ./fork_stdio_buf > file && cat file</pre>
 * Wieso wird nur im einen Fall der Output verdoppelt?
 * Hinweis: Was passiert bei *fork()* im Speicher?
 
-### d) Zombies, 15'
+### d) Zombie-Prozesse, 15'
 * Lassen Sie den Beispiel-Code [make_zombie.c](http://man7.org/tlpi/code/online/book/procexec/make_zombie.c.html)<sup>TLPI</sup> laufen.
 * Senden Sie dem Zombie-Child ein SIGKILL Signal.
 * Was macht der system() Aufruf im Source Code?
