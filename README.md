@@ -5,14 +5,21 @@ Für Slides und Code Beispiele, siehe [Lektion 5](../../../fhnw-syspr/blob/maste
 > *Achtung: Arbeiten Sie nicht direkt auf diesem Repository.*<br/>
 > *[Prüfen Sie die vorhandenen Forks, um das Repository für Ihre Klasse zu finden.](../../network/members)*
 
-### a) Hands-on, 30'
-* X:<pre>
-    $ cd ~</pre>
+### a) fork(), 15'
+* Schreiben Sie ein Programm my_fork.c, das "forkt".
+* Nutzen Sie die online System Call Dokumentation.
+* Das Programm soll den folgenden Output ausgeben, mit konkreten PID Werten für pid, pid_c und pid_p:<pre>
+I'm parent pid of child pid_c
+I'm child pid of parent pid_p</pre>
+* Entspricht der Output ihren Erwartungen? Wieso?
 
-### b) Signal Masken, 30'
+### b) Signal Masken, 45'
 * Schreiben Sie ein Programm *my_sync.c*, das den Code von [fork_sig_sync.c](http://man7.org/tlpi/code/online/book/procexec/fork_sig_sync.c)<sup>TLPI</sup> wie folgt erweitert:
 * Der neue Code soll ohne *tlpi_hdr.h* und *curr_time.h* builden und Signal Masken für *blocked* und *pending* Signale ausgeben, dort im Code, wo sich was ändert.
-* Hinweis: *man* von *sigprocmask()* und *sigpending()*.
+* Hinweis: Dokumentation von *sigprocmask()* lesen, *sigpending()* und *printf("%032x", ...)* nutzen.
+
+### c) Signal Masken, 30'
+* 
 
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
