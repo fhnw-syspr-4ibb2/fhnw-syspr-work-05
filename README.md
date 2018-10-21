@@ -30,7 +30,7 @@ $ ./fork_stdio_buf > file && cat file</pre>
 * Lassen Sie den Beispiel-Code [make_zombie.c](http://man7.org/tlpi/code/online/book/procexec/make_zombie.c.html)<sup>TLPI</sup> laufen.
 * Senden Sie dem Zombie-Child ein SIGKILL Signal.
 * Was macht der system() Aufruf im Source Code?
-* Hinweis: &lt;defunct&gt; bedeutet Zombie-Prozess.
+* Hinweis: _&lt;defunct&gt;_ bedeutet Zombie-Prozess.
 
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
