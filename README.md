@@ -18,8 +18,13 @@ I'm child pid of parent pid_p</pre>
 * Der neue Code soll ohne *tlpi_hdr.h* und *curr_time.h* builden und Signal Masken für *blocked* und *pending* Signale ausgeben, dort im Code, wo sich was ändert.
 * Hinweis: Dokumentation von *sigprocmask()* lesen, *sigpending()* und *printf("%032x", ...)* nutzen.
 
-### c) Signal Masken, 30'
-* 
+### c) exit(), 15'
+* Sehen Sie sich den [fork_stdio_buf.c](http://man7.org/tlpi/code/online/book/procexec/fork_stdio_buf.c)<sup>TLPI</sup> Source an und erklären Sie, wieso sich der Output dieser beiden Aufrufe unterscheidet:<pre>
+$ ./fork_stdio_buf
+$ ./fork_stdio_buf > file && cat file</pre>
+* Wieso wird ein Teil des Outputs doppelt ausgegeben?
+* Wieso wird nur im einen Fall der Output verdoppelt?
+* Hinweis: Was passiert bei *fork()* im Speicher?
 
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
