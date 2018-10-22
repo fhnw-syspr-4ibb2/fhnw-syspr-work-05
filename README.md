@@ -5,7 +5,7 @@ Für Slides und Code Beispiele, siehe [Lektion 5](../../../fhnw-syspr/blob/maste
 > *Achtung: Arbeiten Sie nicht direkt auf diesem Repository.*<br/>
 > *[Prüfen Sie die vorhandenen Forks, um das Repository für Ihre Klasse zu finden.](../../network/members)*
 
-### a) fork(), 15'
+### a) *fork()*, 15'
 * Schreiben Sie ein Programm my_fork.c, das "forkt".
 * Nutzen Sie die online System Call Dokumentation.
 * Das Programm soll den folgenden Output ausgeben, mit konkreten PID Werten für pid, pid_c und pid_p:<pre>
@@ -18,7 +18,7 @@ I'm child pid of parent pid_p</pre>
 * Der neue Code soll ohne *tlpi_hdr.h* und *curr_time.h* builden und Signal Masken für *blocked* und *pending* Signale ausgeben, dort im Code, wo sich was ändert.
 * Hinweis: Dokumentation von *sigprocmask()* lesen, *sigpending()* und *printf("%032x", ...)* nutzen.
 
-### c) exit(), 15'
+### c) *exit()*, 15'
 * Finden Sie heraus, wieso sich in [fork_stdio_buf.c](http://man7.org/tlpi/code/online/book/procexec/fork_stdio_buf.c.html)<sup>TLPI</sup> der Output dieser beiden Aufrufe unterscheidet:<pre>
 $ ./fork_stdio_buf
 $ ./fork_stdio_buf > file && cat file</pre>
@@ -34,7 +34,7 @@ $ ./fork_stdio_buf > file && cat file</pre>
 
 ### e) Eigenes *system()*, 15'
 * Implementieren Sie eine eigene system() Funktion.
-* Nutzen Sie dazu das sh Kommando mit Argument -c:<pre>
+* Nutzen Sie dazu das *sh* Kommando mit Argument *-c*:<pre>
 $ sh -c "ls | wc"</pre>
 * Vereinfachung: Gerüst von [my_system.c](my_system.c) im Repo.
 
