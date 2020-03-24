@@ -22,7 +22,10 @@ $ ./fork_stdio_buf > file && cat file</pre>
 * Hinweis: Was passiert bei *fork()* im Speicher?
 
 ### c) Zombie-Prozesse, 15'
-* Lassen Sie den Beispiel-Code [make_zombie.c](http://man7.org/tlpi/code/online/book/procexec/make_zombie.c.html)<sup>TLPI</sup> laufen.
-* Senden Sie dem Zombie-Child ein *SIGKILL* Signal.
-* Was macht der *system()* Aufruf im Source Code?
-* Hinweis: _&lt;defunct&gt;_ bedeutet Zombie-Prozess.
+* Schreiben Sie Code, der für 1 Sekunde einen ZombieProzess erzeugt, mit [exit()](http://man7.org/linux/man-pages/man3/exit.3.html), [fork()](http://man7.org/linux/man-pages/man2/fork.2.html), [sleep()](http://man7.org/linux/man-pages/man3/sleep.3.html) und [wait()](http://man7.org/linux/man-pages/man2/waitpid.2.html).<pre>
+$ ./my_zombie &
+[1] 1001
+$ ps aux | grep my_zombie
+... 1001 ... ./my_zombie
+... 1002 ... [my_zombie] &lt;defunct&gt;</pre>
+* Hinweis: &lt;defunct&gt; bedeutet Zombie-Prozess.
