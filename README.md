@@ -27,5 +27,5 @@ $ ./my_zombie &
 [1] 1001
 $ ps aux | grep my_zombie
 ... 1001 ... ./my_zombie
-... 1002 ... [my_zombie] <defunct></pre>
-* Hinweis: <defunct> bedeutet Zombie-Prozess.
+... 1002 ... [my_zombie] &lt;defunct&gt;</pre>
+* Hinweis: &lt;defunct&gt; bedeutet Zombie-Prozess.
