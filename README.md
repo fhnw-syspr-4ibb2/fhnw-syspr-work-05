@@ -26,9 +26,3 @@ $ ./fork_stdio_buf > file && cat file</pre>
 * Senden Sie dem Zombie-Child ein *SIGKILL* Signal.
 * Was macht der *system()* Aufruf im Source Code?
 * Hinweis: _&lt;defunct&gt;_ bedeutet Zombie-Prozess.
-
-### d) Eigenes *system()*, 15'
-* Implementieren Sie eine eigene *system()* Funktion.
-* Nutzen Sie dazu das *sh* Kommando mit Argument *-c*:<pre>
-$ sh -c "ls | wc"</pre>
-* Vereinfachung: Gerüst von [my_system.c](my_system.c) im Repo.
