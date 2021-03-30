@@ -8,7 +8,7 @@ Für Slides und Code Beispiele, siehe [Lektion 5](../../../fhnw-syspr/blob/maste
 ### a) *fork()*, 15'
 * Schreiben Sie ein Programm my_fork.c, das "forkt".
 * Nutzen Sie die System Calls *fork()*, *exit()* und *wait()*.
-* Das Programm soll den folgenden Output ausgeben, mit konkreten Prozess IDs für pid, pid_c und pid_p:<pre>
+* Das Programm soll den folgenden Output ausgeben, mit konkreten Prozess IDs für *pid*, *pid_c* und *pid_p*:<pre>
 I'm parent pid of child pid_c
 I'm child pid of parent pid_p</pre>
 
